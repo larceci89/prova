@@ -1,0 +1,25 @@
+"""""
+how to release the library for installation
+"""""
+
+register an account on https://test.pypi.org/ 
+
+use "twine" (installed via conda install)
+$ python setup.py sdist bdist_wheel
+
+--- put distribution online available to everyone
+$ twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+
+
+--- to get the distribution: 
+$ twine upload dist/*
+
+
+
+
+HOW TO CREATE DOCUMENTATION WITH SPHINX
+
+$ sphinx-quickstart
+
+
+
